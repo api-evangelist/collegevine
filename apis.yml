@@ -1,7 +1,30 @@
 aid: collegevine
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/collegevine.png
 name: Collegevine
-description: Collegevine is a company surfaced as a portfolio company of menlo-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CollegeVine is a Cambridge, Massachusetts company, backed by Menlo Ventures,
+  that has repositioned itself as "the AI operating system for universities." Its
+  platform pairs automated ingestion of data from campus systems (a Data layer)
+  with a unified Ontology of institutional operations and an AI Operations layer
+  of agents, applications, and ML models that connect directly to a university's
+  CRM and admissions workflows. CollegeVine also operates a large consumer-facing
+  college-admissions guidance property (chancing engine, essay guidance, and an
+  AI counselor) at collegevine.com and blog.collegevine.com. As of this profile
+  the company exposes no public developer API, OpenAPI specification, developer
+  portal, or published SDK for its product; engagement is enterprise sales and
+  demo driven. It does maintain an active public GitHub organization of
+  open-source PureScript, Haskell, and TypeScript libraries.
 url: https://raw.githubusercontent.com/api-evangelist/collegevine/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Education
+- Higher Education
+- Artificial Intelligence
+- College Admissions
+- AI Agents
+- EdTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/collegevine-domain-security.yml
 - type: Website
   url: https://collegevine.com
+- type: Blog
+  url: https://blog.collegevine.com
+- type: GitHubOrganization
+  url: https://github.com/collegevine
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
